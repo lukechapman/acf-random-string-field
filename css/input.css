@@ -1,0 +1,10 @@
+.acf-field .acf-random-string-field-wrap .acf-random-string-field-input{
+	float: left;
+	width: 78%;
+	margin-right: 2%;
+}
+
+.acf-field .acf-random-string-field-wrap .acf-random-string-field-button{
+	float: left;
+	width: 20%;
+}
