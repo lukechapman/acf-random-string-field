@@ -3,8 +3,8 @@
 /*
 Plugin Name: Advanced Custom Fields: Random String Field
 Plugin URI: http://github.com/lukechapman
-Description: Generates a random string
-Version: 1.0.0
+Description: Generates a random string using a pool of alphanumeric and special characters.
+Version: 1.1.0
 Author: luke chapman
 Author URI: http://iamlukechapman.com
 License: GPLv2 or later

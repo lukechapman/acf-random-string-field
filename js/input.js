@@ -6,9 +6,14 @@
 		$('.acf-random-string-field-button').on('click', function(e){
 			
 			var string_length = $(this).attr('data-length');
+			var alphanumeric = $(this).attr('data-alphanumeric');
 			
 			var random_string = "";
-		    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#%!";
+		    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#%!&*$@";
+
+		    if( alphanumeric ){
+		    	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		    }
 		
 		    for( var i=0; i < string_length; i++ )
 		        random_string += possible.charAt(Math.floor(Math.random() * possible.length));

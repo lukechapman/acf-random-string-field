@@ -7,11 +7,9 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Generates a random string
-
 == Description ==
 
-Generates a random string
+Generates a random string using a pool of alphanumeric and special characters.
 
 = Compatibility =
 
@@ -25,6 +23,8 @@ This ACF field type is compatible with:
 3. Create a new field via ACF and select the Random String type
 
 == Changelog ==
-
+= 1.1.0 =
+* Feature: Added 'Alphanumeric only' option.
+* Fix: Added more characters to possible character pool.
 = 1.0.0 =
-* Initial Release.
+* Initial release.

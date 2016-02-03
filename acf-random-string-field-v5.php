@@ -47,6 +47,7 @@ class acf_field_random_string extends acf_field {
 		
 		$this->defaults = array(
 			'length'	=> 10,
+			'alphanumeric' => false
 		);
 		
 		
@@ -97,6 +98,16 @@ class acf_field_random_string extends acf_field {
 			'name'			=> 'length'
 		));
 
+		acf_render_field_setting( $field, array(
+			'label'			=> __('Alphanumeric only','acf-random-string'),
+			'instructions'	=> __('','acf-random-string'),
+			'name'			=> 'alphanumeric',
+			'type'  =>  'checkbox',
+			'choices' => array(
+				'1' => 'Yes'
+			)
+		));
+
 	}
 	
 	
@@ -138,7 +149,7 @@ class acf_field_random_string extends acf_field {
 		?>
 		<div class="acf-random-string-field-wrap">
 		<input type="text" name="<?php echo esc_attr($field['name']) ?>" value="<?php echo esc_attr($field['value']) ?>" class="acf-random-string-field-input" />
-		<button class="acf-random-string-field-button button-primary" data-length="<?php echo esc_attr($field['length']) ?>">Generate</button>
+		<button class="acf-random-string-field-button button-primary" data-length="<?php echo esc_attr($field['length']) ?>" data-alphanumeric="<?php echo esc_attr($field['alphanumeric'][0]) ?>">Generate</button>
 		<br class="clear" />
 		</div>
 		<?php
