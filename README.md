@@ -2,11 +2,9 @@
 
 # ACF Random String Field
 
------------------------
-
 ### Description
 
-Generates a random string
+Generates a random string using a pool of alphanumeric and special characters.
 
 ### Compatibility
 
@@ -24,7 +22,9 @@ This ACF field type is compatible with:
 
 **1.1.0**
 * Feature: Added 'Alphanumeric only' option.
-* Fix: Added more characters to possible character pool.
+* Tweak: Added more characters to possible character pool.
 
 **1.0.0**
 * Initial release.
+
+-----------------------
