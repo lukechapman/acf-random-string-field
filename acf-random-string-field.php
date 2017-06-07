@@ -33,7 +33,8 @@ add_action('acf/include_field_types', 'include_field_types_random_string_field')
 
 
 
-
+/*
+** Not currently supporting ACF4
 // 3. Include field type for ACF4
 function register_fields_random_string_field() {
 	
@@ -42,7 +43,7 @@ function register_fields_random_string_field() {
 }
 
 add_action('acf/register_fields', 'register_fields_random_string_field');	
-
+*/
 
 
 	
